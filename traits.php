@@ -1,27 +1,27 @@
 <?php
 include('errorReport.php');
 
-trait tosa {
-    private $name = "Tosa Pagli";
+trait Mahim {
+    private $name = "Mahim";
     public function msg() {
         echo "Hi....How are you? My name is: {$this->name} <br/>";
     }
 }
 
-trait putu {
-    protected $name2 = "Vutu naare";
+trait Rifat{
+    protected $name2 = "Rifat";
     public function show() {
         echo "Hello putu, My name is {$this->name2} <br/>";
     }
 }
 
-class pesha {
-    use tosa, putu;
+class Mesha{
+    use Mahim, Rifat;
 
 }
 
-$obj = new pesha();
+$obj = new Mesha();
 $obj->msg();
 $obj->show();
 
-// $ab = new pesha();
+// $ab = new Mesha();
